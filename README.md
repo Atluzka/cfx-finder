@@ -2,7 +2,11 @@
 # CFX Finder Discord Bot
 
 A simple to use discord bot to lookup information about fivem servers coded in JavaScript.
-
+* Server IP and Port
+* Server Name
+* Players (online/max)
+* Resources
+* enhancedHostSupport, requestSteamTicket, Onesync
 
 
 
@@ -45,7 +49,7 @@ This part is optional but, you can also add this into your package.json -> scrip
 ```bash
 "dev": "nodemon index.js"
 ```
-You need to install nodemon by typing 'npm install nodemon' into the terminal, if you want to do this.
+You need to install nodemon by typing 'npm install nodemon' into the terminal, if you want to do this
 This makes it so everytime you save your file it updates automatically without you having to restart the bot.
 
 Run this in your terminal to activate.
