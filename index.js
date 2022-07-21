@@ -45,7 +45,6 @@ client.on('messageCreate', (message) => {
                             var currentclients = data['Data']['clients'];
                             var maxclients = data['Data']['vars']['sv_maxClients'];
                             var hostname = data['Data']['hostname'];
-                            var mapname = data['Data']['mapname'];
                             var tags = data['Data']['vars']['tags'];
                             var enhancedHostSupport = data['Data']['enhancedHostSupport'];
                             var requestSteamTicket = data['Data']['requestSteamTicket']
@@ -55,7 +54,6 @@ client.on('messageCreate', (message) => {
                              
                             const onesync = "Onesync **=>** `" + String(onesync_enabled) + "`" 
                             const servername = "Server Name **=>** `" + String(sv_projectname) + "`"
-                            const servermapname = "Mapname **=>** `" + String(mapname) + "`"
                             const servertags = "Tags **=>** `" + String(tags) + "`"
                             const players = "Players **=>** `" + String(currentclients) + "/" + String(maxclients) + "`"
                             const resources = "Resources **=>** `" + String(resourcesdata.length) + "`"
@@ -64,7 +62,7 @@ client.on('messageCreate', (message) => {
  
                             const cfxcmdembed = new MessageEmbed()
                                 .setTitle(String(hostname))
-                                .setDescription(ip + "\n" + servername + "\n" + servertags + "\n"  + players + "\n" + resources  + "\n" + servermapname + "\n" +  enhanhostsup + "\n" + reqstetick + "\n" + onesync)
+                                .setDescription(ip + "\n" + servername + "\n" + servertags + "\n"  + players + "\n" + resources  + "\n" +  enhanhostsup + "\n" + reqstetick + "\n" + onesync)
                                 .setColor("#C5803D")
                             return message.channel.send({
                                 embeds: [cfxcmdembed]
