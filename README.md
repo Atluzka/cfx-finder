@@ -31,7 +31,7 @@ npm install request
 ```
 If you get any errors, close the application and reopen it as an administrator.
 
-After successfully installing everything make a new file called '**index.js**', which is the main file of your discord bot. Copy and paste or replace the code from my index.js file to yours.. Create another file '**.env**' which is going to be where you store your discord token.
+After successfully installing everything make a new file called '**index.js**', which is the main file of your discord bot. Copy and paste or replace the code from my index.js file to yours. Create another file '**.env**' which is going to be where you store your discord token.
 
 Type this into the .env file
 ```bash
